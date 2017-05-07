@@ -1,28 +1,6 @@
 <?php
 ini_set('memory_limit','300M');
-
 system("rm -rf text ; mkdir -p text/22");
-
-$languages = ['English' => 0,
-              'Russian' => 2,
-              'Bulgarian' => 3,
-              'German' => 4,
-              'Dutch' => 6,
-              'Estonian' => 7,
-              'Finnish' => 8,
-              'French' => 9,
-              'Greek' => 10,
-              'Hungarian' => 11,
-              'Italian' => 12,
-              'Korean' => 13,
-              'Lithuanian' => 14,
-              'Polish' =>  15,
-              'Portuguese' => 16,
-              'Romanian' => 17,
-              'SpanishAmericas' => 18,
-              'SpanishEuropean' => 19,
-              'Swedish' => 20];
-
 $metrics = json_decode(file_get_contents("metrics-short.json"));
 
 for ($i = 0; $i <= 196; $i++) {
