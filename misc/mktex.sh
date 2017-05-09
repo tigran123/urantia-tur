@@ -15,7 +15,7 @@ declare -i sec i paridx linenum
 
 rm -rf tex ; mkdir tex
 #for ((i = 1; i <= 2; i++));
-for ((i = 0; i <= 123; i++));
+for ((i = 0; i <= 196; i++));
 do
    p=$(printf "%03d" $i)
    parlist=($(sed -ne "s%^/\* Paper${i} \*/  *\[\(.*\)\],*%\1%p" ${METRIC_FILE} | sed -e "s%,%%g"))
